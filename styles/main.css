@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+bottom {
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section {
+  width: 50%;
+  margin-top: 40px;
+}
+
+.navigation {
+  width: 100%;
+  display: flex;
+  height: 100px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 300px;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.077);
+}
+
+.btn {
+  text-decoration: none;
+  border: solid 1px;
+  border-radius: 5px;
+  padding: 10px 30px;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  color: whitesmoke;
+  background-color: black;
+}
+.card {
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.077);
+  border-radius: 20px;
+}
+
+.card__form {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+.form-content {
+  display: flex;
+  margin: 20px 0;
+  justify-content: space-between;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.card__form-btn {
+  text-decoration: none;
+  border: solid 1px;
+  border-radius: 5px;
+  padding: 10px 30px;
+  transition: all 0.3s;
+  align-self: flex-end;
+  margin-bottom: 30px;
+}
+
+.card__title {
+  margin: 20px 30px;
+}
+
+.list-head {
+  margin-bottom: 30px;
+}
+
+.list-content {
+  width: 100%;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.077);
+  border-radius: 20px;
+  min-height: 30px;
+  padding: 20px 0;
+}
+
+.read {
+  text-decoration: none;
+  border: solid 1px;
+  border-radius: 5px;
+  padding: 5px 15px;
+  color: whitesmoke;
+  background-color: black;
+}
+.not-read {
+  text-decoration: none;
+  border: solid 1px;
+  border-radius: 5px;
+  padding: 5px 15px;
+  background-color: whitesmoke;
+  color: black;
+}

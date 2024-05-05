@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <title>my reading list</title>
+  </head>
+  <body>
+    <nav class="navigation">
+      <h2 >reading list</h2>
+
+      <a class="btn" href="https://github.com/MaroufX" target="_blank"
+        >my github</a
+      >
+    </nav>
+
+    <main>
+      <section class="card">
+        <h2 class="card__title">add new book</h2>
+
+        <form onsubmit="handleSubmit(event)" class="card__form">
+          <div class="form-content">
+            <div class="info">
+              <label for="bookName">Book</label>
+
+              <input class="" type="text" id="bookName" />
+            </div>
+            <div class="info">
+              <label for="authorName">Author</label>
+              <input class="" type="text" id="authorName" />
+            </div>
+            <div class="info">
+              <label for="bookPages">Pages</label>
+              <input class="" type="number" id="bookPages" />
+            </div>
+            <div class="info">
+              <label for="bookStatue" class="form-label">Statue</label>
+              <select class="form-select form-select-lg" id="bookStatue">
+                <option value="read">read</option>
+                <option value="not-read">not read</option>
+              </select>
+            </div>
+          </div>
+
+          <button type="submit" class="card__form-btn">Add Book</button>
+        </form>
+      </section>
+
+      <section>
+        <h2 class="list-head">My list</h2>
+        <table class="list-content">
+          <thead>
+            
+            <tr>
+              <th>Book</th>
+              <th>Author</th>
+              <th>Pages</th>
+              <th>statue</th>
+              <th>delete</th>
+            </tr>
+          </thead>
+          <tbody class="list-info">
+<!-- 
+            `<tr>
+              <td>${booksInfo[i].bookName}</td>
+              <td>${booksInfo[i].bookAuthor}</td>
+              <td>${booksInfo[i].bookPages}</td>
+              <td><button class="not-read">read</button></td>
+              <td><button>delete</button></td>
+            </tr> ` -->
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <footer></footer>
+
+    <script src="javascrept/mai.js"></script>
+  </body>
+</html>
